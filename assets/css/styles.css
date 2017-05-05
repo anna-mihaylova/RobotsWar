@@ -1,0 +1,267 @@
+body {
+    font-family: 'HVD Peace', Arial, sans-serif;
+    font-size: 1.27vw;
+    line-height: 20px;
+    overflow: hidden;
+    background: #050608;
+    color: #f2b60c;
+}
+
+main, section, div, p {
+	box-sizing: border-box;
+}
+
+main {
+    width: 90%;
+    height: 90%;
+    margin: auto;
+    margin-top: 0.5%;
+    z-index: 0;
+}
+
+input:focus {
+    outline:none;
+}
+
+input[type="button"] {
+    height: 7%;
+    left: 0.1%;
+    font-family: 'HVD Peace', Arial, sans-serif;
+    background-color: #1b1d21;
+    color: #57aaad;
+    font-size: 1.5em;
+    letter-spacing: 0.2em;
+    text-align: center;
+    text-transform: uppercase;
+    z-index: 11;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 3px #353e45;
+}
+
+input[type="button"]:hover {
+    background-color: #57aaad;
+    color: #1b1d21;
+}
+
+input[type="button"]:active {
+  background-color: #555e60;
+  box-shadow: 0 1px #666;
+  transform: translateY(2px);
+}
+
+.background, section#play, input#playButton, input#howToPlayButton, .div, .img, h4, .enemy, .tank, #bomb {
+    position: absolute;
+}
+
+.background {
+    width: 90%;
+    height: 98%;
+    background-image: url('../img/background.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 101% 100%;
+    border: 2px solid #000;
+    cursor: url('../img/cursor.png'), auto;
+    z-index: 1;
+}
+
+section#play {
+    width: 100%;
+    height: 110%;
+    top: 0;
+    background-image: url('../img/wars.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    z-index: 5;
+}
+
+input#playButton {
+    width: 8%;
+    bottom: 10%;
+}
+
+input#howToPlayButton {
+    width: 20%;
+    bottom: 2%;
+}
+
+header {
+    width: 100%;
+    height: 10%;
+    position: relative;
+    z-index: 3;
+}
+
+.div {
+    width: 20%;
+    height: 80%;
+    z-index: 4;
+}
+
+.div.lives {
+    top: 3%;
+    left: 3%;
+}
+
+.div.score {
+    top: 3%;
+    right: 7%;
+}
+
+.img, h4, .div {
+    display: inline;
+}
+
+.img {
+    width: 15%;
+    height: 80%;
+    margin-top: 4%;
+    background-repeat: no-repeat;
+    z-index: 5;
+}
+
+.img.lives {
+    background: url('../img/lives.png');
+    background-size: 100% 100%;
+}
+
+h4.lives {
+    bottom: 1%;
+    left: 16%;
+}
+
+h4.lives.value {
+    left: 38%;
+}
+
+.img.score {
+    left: 34%;
+    background: url('../img/score.png');
+    background-size: 100% 100%;
+}
+
+h4.score {
+    bottom: 1%;
+    left: 50%;
+}
+
+h4.score.value {
+    left: 80%;
+}
+
+.div.bomb {
+    top: 1%;
+    left: 35%;
+}
+
+.img.bomb {
+    height: 100%;
+    left: 36%;
+    background: url('../img/bomb.png');
+    background-position: 0px 0px;
+    background-size: 100% 110%;
+}
+
+h4.bomb {
+    bottom: 1%;
+    left: 50%;
+}
+
+h4.bomb.value {
+    left: 77%;
+}
+
+.enemy {
+    width: 8%;
+    height: 14%;
+    background: url('../img/enemy.png');
+    background-size: 100% 100%;
+    opacity: 1;
+    z-index: 5;
+}
+
+.tank {
+    width: 5%;
+    height: 10%;
+    bottom: 0px;
+    background: url('../img/tank.png');
+    background-size: 100% 100%;
+}
+
+#bomb {
+    width: 20px;
+    height: 20px;
+    z-index: 8;
+    background: url('../img/bomb.png');
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    background-size: 100% 110%;
+    display: none;
+}
+
+div#alert {
+    width: 30%;
+    height: 10%;
+    margin: auto;
+    margin-top: 20%;
+    z-index: 20;
+}
+
+p#rules {
+    width: 50%;
+    height: 50%;
+    margin: auto;
+    margin-top: 10%;
+    padding: 2%;
+    color: #57aaad;
+    font-size: 1.2em;
+    letter-spacing: 0.2em;
+    text-align: center;
+    text-overflow: clip;
+    border: 1px solid #57aaad;
+    border-radius: 15px;
+    z-index: 10;
+}
+
+ @media only screen and (max-width: 700px) and (min-width: 400px) {
+    input[type="button"] {
+        font-size: 3em;
+    }
+
+    input#howToPlayButton {
+        width: 40%;
+    }
+
+    input#playButton {
+        width: 16%;
+    }
+
+    .tank {
+        width: 8%;
+        height: 16%;
+    }
+    .enemy {
+        width: 10%;
+        height: 18%;
+    }
+
+    h4 {
+        font-size: 1.7em;
+    }
+
+    h4.lives.value {
+        left: 50%;
+    }
+
+    h4.bomb.value {
+        left: 94%;
+    }
+
+    h4.score.value {
+        left: 98%;
+    }
+}

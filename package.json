@@ -1,0 +1,23 @@
+{
+  "name": "robots_war_game",
+  "version": "1.0.0",
+  "description": "\"# Robots_war\"",
+  "main": "index.js",
+  "dependencies": {
+    "jquery": "^3.1.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anna-mihaylova/Robots_war.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anna-mihaylova/Robots_war/issues"
+  },
+  "homepage": "https://github.com/anna-mihaylova/Robots_war#readme"
+}

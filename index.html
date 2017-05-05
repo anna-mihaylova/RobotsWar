@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Robots War Game</title>
+        <link rel="stylesheet" href="assets/css/reset.css">
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="stylesheet" href="assets/font/stylesheet.css" type="text/css" charset="utf-8" />
+    </head>
+    <body>
+        <main>
+            <section id="game" class="background">
+                <header>
+                    <div class="lives div">
+                        <div id="lives" class="img lives"></div>
+                        <span>
+                            <h4 class="lives">live:</h4>
+                        </span>
+                        <span class="value lives">
+                            <h4 id="livesValue" class="lives value"></h4>
+                        </span>
+                    </div>
+                    <div class="score div">
+                        <div id="score" class="img score"></div>
+                        <span>
+                            <h4 class="score">score:</h4>
+                        </span>
+                        <span class="value score">
+                            <h4 id="scoreValue" class="score value"></h4>
+                        </span>
+                    </div>
+                    <div class="bomb div">
+                        <div class="img bomb"></div>
+                        <span>
+                            <h4 class="bomb">bomb:</h4>
+                        </span>
+                        <span class="value bomb">
+                            <h4 id="bombValue" class="bomb value"></h4>
+                        </span>
+                    </div>
+                </header>
+                <section>
+                    <div id="enemy" class="enemy"></div>
+                    <div id="tank" class="tank"></div>
+                </section>
+            </section>
+        </main>
+    </body>
+    <script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="app/game.js"></script>
+    <script src="app/main.js"></script>
+</html>
